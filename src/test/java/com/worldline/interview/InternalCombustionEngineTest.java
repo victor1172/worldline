@@ -108,7 +108,7 @@ public class InternalCombustionEngineTest {
             engine.start();
             fail("Engine should not start with zero fuel");
         } catch (IllegalStateException e) {
-            // Expected behavior
+            // do nothing
         }
     }
 

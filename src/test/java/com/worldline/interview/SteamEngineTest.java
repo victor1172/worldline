@@ -103,12 +103,11 @@ public class SteamEngineTest {
     @Test
     public void testFillNegativeFuelLevel() {
         engine.fill(FuelType.WOOD, -10);
-        // Try to start engine - should throw exception if fuel level is 0
         try {
             engine.start();
             fail("Engine should not start with zero fuel");
         } catch (IllegalStateException e) {
-            // Expected behavior
+            // do nothing
         }
     }
 
