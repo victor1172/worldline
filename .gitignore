@@ -1,0 +1,30 @@
+### Java ###
+*.class
+*.log
+
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+# 忽略 Gradle GUI 配置
+gradle-app.setting
+
+# 避免忽略 Gradle wrapper jar 文件
+!gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
